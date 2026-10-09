@@ -69,6 +69,7 @@ function InfoCard({
   number,
   items,
   href,
+  label,
 }: {
   index: number;
   icon: string;
@@ -76,6 +77,7 @@ function InfoCard({
   number: string;
   items: string[];
   href: string;
+  label?: string;
 }) {
   return (
     <CardShell index={index} className="bg-[#212121] p-5 sm:p-6 flex flex-col min-h-[380px] lg:min-h-[440px]">
@@ -93,7 +95,7 @@ function InfoCard({
       </div>
       <Checklist items={items} />
       <div className="mt-auto pt-4">
-        <LearnMore href={href} />
+        <LearnMore href={href} label={label} />
       </div>
     </CardShell>
   );
@@ -135,7 +137,8 @@ export default function Features() {
             icon={IMG_STORYBOARD}
             title="Startup Stalls."
             number="01"
-            href="#stalls"
+            href="#visit"
+            label="Plan your visit"
             items={[
               'Fire safety & heaters',
               'Organic food & kitchenware',

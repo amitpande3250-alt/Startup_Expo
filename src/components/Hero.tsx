@@ -6,6 +6,7 @@ const NAV_ITEMS = [
   { label: 'Overview', href: '#overview' },
   { label: 'Stalls', href: '#stalls' },
   { label: 'Activities', href: '#activities' },
+  { label: 'Visit', href: '#visit' },
   { label: 'Agenda', href: '#agenda' },
   { label: 'Contact', href: '#contact' },
 ];
@@ -40,8 +41,8 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/60 pointer-events-none" />
 
         {/* Navbar */}
-        <nav aria-label="Primary" className="absolute top-0 left-1/2 -translate-x-1/2 z-20">
-          <div className="bg-black rounded-b-2xl md:rounded-b-3xl px-4 py-2 md:px-8 md:py-3 flex items-center gap-3 sm:gap-6 md:gap-12 lg:gap-14 whitespace-nowrap">
+        <nav aria-label="Primary" className="absolute top-0 left-1/2 -translate-x-1/2 z-20 max-w-[calc(100%-1rem)] overflow-x-auto rounded-b-2xl md:rounded-b-3xl">
+          <div className="bg-black rounded-b-2xl md:rounded-b-3xl px-3 py-2 md:px-6 md:py-3 flex items-center gap-2.5 sm:gap-5 md:gap-8 lg:gap-10 whitespace-nowrap w-max mx-auto">
             {NAV_ITEMS.map((item) => (
               <a
                 key={item.label}

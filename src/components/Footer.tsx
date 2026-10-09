@@ -1,23 +1,14 @@
-import { ArrowUpRight, Calendar, Clock, MapPin } from 'lucide-react';
+import { ArrowUpRight, Calendar, Clock, MapPin, Navigation } from 'lucide-react';
+import { MAPS_URL, SECTORS } from '../constants';
 
 const EXPLORE_LINKS = [
   { label: 'Overview', href: '#overview' },
   { label: 'Startup Stalls', href: '#stalls' },
   { label: 'Idea Box Booth', href: '#idea-box' },
   { label: 'Rapid-Fire Round', href: '#rapid-fire' },
+  { label: 'Plan Your Visit', href: '#visit' },
   { label: 'Agenda', href: '#agenda' },
-];
-
-const SECTORS = [
-  'Fire Safety',
-  'Heaters',
-  'Organic Food',
-  'Automotive Parts',
-  'Artificial Intelligence',
-  'Agriculture Drones',
-  'Consumer Electronics',
-  'Fashion',
-  'Kitchenware',
+  { label: 'FAQ', href: '#faq' },
 ];
 
 export default function Footer() {
@@ -44,6 +35,14 @@ export default function Footer() {
               <span className="inline-flex items-center gap-2">
                 <MapPin className="w-3.5 h-3.5 text-primary" /> Meena Bhujbal College Hall
               </span>
+              <a
+                href={MAPS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 mt-1 text-primary/80 hover:text-primary transition-colors"
+              >
+                <Navigation className="w-3.5 h-3.5" /> Get directions on Google Maps
+              </a>
             </div>
           </div>
 
@@ -88,7 +87,17 @@ export default function Footer() {
               <span className="text-primary/80 font-medium">
                 E-Cell, MET Institute of Technology
               </span>
+              <br />
+              <span className="text-gray-500">
+                Part of NEC 2026 • Help desk at check-in gates
+              </span>
             </p>
+            <a
+              href="#top"
+              className="inline-flex items-center gap-1.5 mt-4 text-[11px] sm:text-xs text-primary/70 hover:text-primary transition-colors"
+            >
+              Back to top <span aria-hidden="true">↑</span>
+            </a>
           </div>
         </div>
 

@@ -3,7 +3,7 @@ import { useRef } from 'react';
 import WordsPullUpMultiStyle from './WordsPullUpMultiStyle';
 
 const BODY_TEXT =
-  'Founders Expo 2026 was organized on 12 October 2026 in Meena Bhujbal College Hall as part of the National Entrepreneurship Challenge (NEC) 2026. 13 startup stalls showcased products across fire safety, heaters, organic food, automotive parts, AI, agriculture drones, consumer electronics, fashion and kitchenware — plus an Idea Box Booth and a Rapid-Fire Round where students generated ideas, built concepts and pitched solutions.';
+  'Founder Expo 2026 brings together 13 startup stalls in Meena Bhujbal College Hall on 12 October 2026, 10 AM – 5 PM, as part of the National Entrepreneurship Challenge (NEC) 2026. Walk the floor across fire safety, heaters, organic food, automotive parts, AI, agriculture drones, consumer electronics, fashion and kitchenware — plus an Idea Box Booth and a Rapid-Fire Round where students generate ideas, build concepts and pitch solutions.';
 
 function AnimatedLetter({
   char,
